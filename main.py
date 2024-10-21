@@ -85,14 +85,6 @@ async def robux(ctx):
 
     await ctx.send(embed=embed, view=view)
 
-# ทำให้บอททำงานตลอดเวลา
-async def keep_alive():
-    while True:
-        await asyncio.sleep(1)  # พักการทำงานเพื่อไม่ให้ใช้ CPU มากเกินไป
-
-# เริ่มการทำงาน
-bot.loop.create_task(keep_alive())
-
 server_on()
 
 bot.run(os.getenv('Token'))
