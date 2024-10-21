@@ -83,8 +83,6 @@ async def robux(ctx):
     view.add_item(button2)
     view.add_item(button3)
 
-    await ctx.send(embed=embed, view=view)
-
-server_on()
+    await ctx .send(embed=embed, view=view)
 
 bot.run(os.getenv('Token'))
